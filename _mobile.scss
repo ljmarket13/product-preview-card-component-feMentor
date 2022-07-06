@@ -1,0 +1,25 @@
+@media screen and (min-width: $desktop-width) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mobile-width) {
+  .container {
+    flex-direction: column;
+    width: 450px;
+
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+      width: 100%;
+    }
+  }
+}
